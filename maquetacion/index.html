@@ -3,53 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xacademy Clase 1 maquetacion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Fundación Tecnología con Propósito</title>
     <style>
-        body {
+         body {
             margin: 0;
+            Font-family: 'Inter', Arial, Helvetica, san serif;
+            color: #201b24;
+            font-style: normal;
+            text-transform: none;
+            text-size-adjust: 100%;
         }
-        p {
-            margin-right: 40px;
+
+        a {
+            text-decoration: none;
+            justify-content: center;
+            border-color: transparent;
+            font-size: 14px;
+            color: #201b24;
+            padding: 5px;
+            /*margin-right: 10px;*/
+            padding-right: 35px;
+            padding-left: 0px;
+            font-weight: 500;
+
         }
+
+        a:hover {
+            color: #9e23ff;
+
+        }
+
         h1 {
-            margin: 0px 400px;
             text-align: center;
+            font-size: 28px;
+            line-height: 1.2;
+            padding: 0;
+            text-align: center;
+            margin-right: 25%;
+            margin-left: 25%;
+            letter-spacing: -0.4;
         }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
+
+        button {
+            outline: 0;
+            border-color: #201b24;
+            padding: 9px 20px;
+            line-height: 14px;
+            font-size: 12px;
+            background: rgb(255, 255, 255, 0);
+            color: #201b24;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            letter-spacing: 0.015em;
+            border-width: 2px 2px 2px 2px;
+            border-style: solid;
+            border-radius: 20px 20px 20px 20px;
+            transition: all .2s;
         }
+
+        p { 
+            font-weight: 400;
+        }
+
+
+        button:hover {
+            background-color: #201b24;
+            color: white;
+        }
+
+        button.redondomorado {        
+            color: #6b53f0;
+            border-color: #6b53f0;
+            margin-left: -25%;
+        }
+
+        button.redondomorado:hover {
+            color: white;
+            background-color: #6b53f0;
+        }
+
+        /*div#contenedor {
+            box-sizing: border-box;
+            display: block;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-style: normal normal;
+            text-size-adjust: 100;
+        }*/
+
+        div#header {
+            border-bottom: 1px solid #8C939C;
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+        }
+
+        div#fusion-header {
+            height: 80px;
+            margin: 0 auto;
+            overflow: visible!important;
+            padding-left: 30px;
+            padding-right: 30px;
+            backface-visibility: hidden;
+            
+        }
+
+        div#fusion-row {
+            max-width: 1200px;
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto;
+            
+        }
+
         div#introduction-actions {
             display: flex;
             justify-content: center;
         }
+
+        div#introduction-text {      
+            padding: 0%;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            margin-left: 0px;
+            margin-right: 0px;
+            display: block;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        div#introduction {
+            margin: 0px aut;
+            padding-top: 5%;
+            max-width:100%;
+            
+        }
+
+        nav {
+            display: block;
+        }
+
+        .resaltado {
+            font-weight: 900;
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        div#logo {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+            display: block;
+            float: left;
+            max-width: 100%;
+        }
+       
+        nav#menu {
+            float: right;
+            position: relative;
+            z-index: 200;
+            overflow: hidden;
+            text-align: center;
+            padding: 25px;
+        }
     </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
-        <div id="header-left">
-            <img src="logo.svg">
-        </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
-        </div>
+    <div id="header">
+        <div id="fusion-header" style="height: 80px; overflow: visible;"> 
+            <div id="fusion-row">
+                <div id="logo">
+                    <a href="https://technologywithpurpose.org/">
+                        <img src="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose.svg" 
+                        srcset="https://technologywithpurpose.org/wp-content/uploads/2022/10/technology-with-purpose.svg 1x" 
+                        width="142" height="40" alt="Technology with Purpose Logo" data-retina_logo_url="" class="fusion-standard-logo">
+
+                     </a>
+                </div>
+
+                <nav id="menu">
+                    <a href="https://technologywithpurpose.org/nosotros/">
+                        Nosotros</a>
+                    <a href="#">
+                        Programas</a>
+                    <a href="#">
+                        Capacitaciones</a>
+                    <a href="https://technologywithpurpose.org/#alianzas">
+                        Alianzas</a>
+                    <a href="https://technologywithpurpose.org/contacto/">
+                        Contacto</a>          
+                    <a href="https://donaronline.org/technology-with-purpose-foudation/sumate-genera-impacto"><button>Sumate +</button></a>
+                    <a href="https://www.instagram.com/technologywithpurpose/" style="padding-right: 10px;">
+                        <img src="iconos/instagram.png" width="15px" height="15px" > 
+                    </a>
+                    <a href="https://www.linkedin.com/company/technologywithpurpose/" style="padding-right: 10px;">
+                        <img src="iconos/linkedin.png" width="18px" height="18px" > 
+                    </a>
+                </nav>
+            </div>
     </div>
-    <div id="introduction" style="padding: 48px;">
+</div>
+    <div id="introduction" >
         <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
+            <h1>
+                Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la
+                tecnología.</h1>
+
         </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+        <div id="introduction-actions">
+            <a>
+            <button>Contactanos -></button>
+            </a>
+            <a>
+                <button class="redondomorado">Sumate <span class="resaltado"> +</span></button>
+            </a>
         </div>
     </div>
 </body>
